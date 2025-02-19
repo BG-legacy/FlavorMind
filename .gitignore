@@ -6,3 +6,4 @@ sendgrid.env
 *.json
 *firebase*adminsdk*.json
 .env
+recipe-frontend.zip
