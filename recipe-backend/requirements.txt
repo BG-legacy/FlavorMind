@@ -1,0 +1,9 @@
+langchain-community
+openai
+fastapi
+uvicorn
+pandas
+python-dotenv
+requests
+langchain-ollama
+aiofiles

@@ -1,0 +1,8 @@
+/.DS_Store
+/archive (2)
+/bitcon-rag-workshop-main
+node_modules
+sendgrid.env
+*.json
+*firebase*adminsdk*.json
+.env

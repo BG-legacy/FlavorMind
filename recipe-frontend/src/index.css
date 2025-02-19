@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1a1a1a;
+  color: #FFD700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  color: #FFD700;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.page-title {
+  font-size: 4.5rem;
+  margin-top: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.empty-state-text {
+  color: #FFD700;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.empty-state-subtext {
+  color: #FFD700;
+  font-size: 1.2rem;
+  text-align: center;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+.recipe-title {
+  color: #FFD700;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.recipe-description {
+  color: #FFD700;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.recipe-ingredients {
+  color: #FFD700;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.recipe-instructions {
+  color: #FFD700;
+  font-size: 1.1rem;
+  line-height: 2;
+}
+
+.cost-estimate {
+  color: #FFD700;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+input::placeholder {
+  color: rgba(255, 215, 0, 0.5);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media (max-width: 600px) {
+  .recipe-action-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 16px;
+    position: sticky;
+    bottom: 0;
+    background: rgba(26, 26, 26, 0.95);
+    backdrop-filter: blur(5px);
+  }
+
+  .recipe-title {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .cost-estimate {
+    font-size: 1.2rem;
+    padding: 12px;
+    margin: 8px 0;
+  }
+}
+

@@ -1,0 +1,149 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.top-banner {
+  background-color: #000000;
+  padding: 1rem 0;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1100;
+  border-bottom: 2px solid rgba(255, 215, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.top-banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .recipe-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cost-estimate {
+    font-size: 1.2rem;
+  }
+  
+  .recipe-instructions {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    padding: 0 1rem;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.header-logo {
+  height: 55px;
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.header-logo:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 640px) {
+  .header-logo {
+    height: 45px;
+  }
+  
+  .recipe-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .recipe-instructions {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    padding: 0 1rem;
+  }
+}
+
+.page-title {
+  font-size: 3.5rem;
+  color: #FFD700;
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}

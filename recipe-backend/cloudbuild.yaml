@@ -1,0 +1,33 @@
+steps:
+  # Build the container image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/recipe-recommender-9d84c/recipe-backend', '.']
+
+  # Push the container image to Container Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/recipe-recommender-9d84c/recipe-backend']
+
+  # Deploy container image to Cloud Run
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      - 'run'
+      - 'deploy'
+      - 'recipe-backend'
+      - '--image'
+      - 'gcr.io/recipe-recommender-9d84c/recipe-backend'
+      - '--region'
+      - 'us-central1'
+      - '--platform'
+      - 'managed'
+      - '--allow-unauthenticated'
+      - '--memory'
+      - '2Gi'
+      - '--cpu'
+      - '4'
+      - '--set-env-vars'
+      - 'OLLAMA_HOST=http://34.173.253.123:11434,PYTHONUNBUFFERED=1'
+
+images:
+  - 'gcr.io/recipe-recommender-9d84c/recipe-backend'
+  
