@@ -1,0 +1,5 @@
+*.js linguist-vendored=false
+*.js linguist-language=JavaScript
+build/static/js/* linguist-vendored=false
+build/static/js/* linguist-generated=false
+build/static/js/* linguist-detectable=true 
