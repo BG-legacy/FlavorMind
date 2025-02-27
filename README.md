@@ -19,8 +19,6 @@ FlavorMind generates personalized recipes using AI based on your ingredients and
 
 - 🤖 AI-powered recipe generation
 - 🧾 Ingredient lists with cost estimates
-- 👤 User profiles and preferences
-- ❤️ Recipe favorites
 - 💰 Price estimation using USDA data
 
 ## 🚀 Quick Start
