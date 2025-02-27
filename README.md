@@ -13,7 +13,7 @@
 
 ## About
 
-FlavorMind generates personalized recipes using AI based on your ingredients and preferences. Built with React, Node.js, and Python, it provides detailed recipes with cost estimates and cooking instructions.
+FlavorMind generates personalized recipes using AI. Built with React, Node.js, and Python, it provides detailed recipes with cost estimates and cooking instructions.
 
 ### ✨ Features
 
